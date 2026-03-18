@@ -1271,8 +1271,8 @@
   <div class="login-bg"></div>
   <div class="login-bg-grid"></div>
   <div class="login-container">
-    <div class="login-logo">GN</div>
-    <h1>GN-OS</h1>
+    <div class="login-logo">SS</div>
+    <h1>STAR-OS</h1>
     <p>LINK DROP OF THE DAY https://1gamesmadeforwyattt.b-cdn.net/dashmetry <---COpy Of 1games.io </p>
     <div class="input-group">
       <input type="text" id="username" placeholder=" " autocomplete="off"/>
@@ -1292,11 +1292,11 @@
   <div id="dev-menu">
     <div class="dev-header">
       <h3>Dev Team</h3>
-      <p>GN-OS // v1.0</p>
+      <p>STAR-OS // v1.0</p>
     </div>
     <div class="dev-list">
       <div class="dev-member">
-        <div class="dev-avatar">Z</div>
+        <div class="dev-avatar">A</div>
         <div class="dev-info"><div class="name">Adsw</div><div class="role">Owner / Founder</div></div>
       </div>
       <div class="dev-member">
@@ -1387,15 +1387,19 @@
       </svg>
     </div>
     <!-- Store -->
-    <div class="taskbar-icon" onclick="openStore()" title="GN Store">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
-        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-        <line x1="3" y1="6" x2="21" y2="6"/>
-        <path d="M16 10a4 4 0 01-8 0"/>
-      </svg>
-    </div>
+    <div class="taskbar-icon" onclick="openRemoteApp ('sandstone','Sandstone','https://raw.githubusercontent.com/GN-math-hub/School-Chaets/refs/heads/main/sandstone.html')" title="Sandstone">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+
+  <!-- Circle (glass) -->
+  <circle cx="11" cy="11" r="6"></circle>
+
+  <!-- Handle -->
+  <line x1="16" y1="16" x2="21" y2="21"></line>
+
+</svg>
+</div>
     <!-- GN Stream -->
-    <div class="taskbar-icon" onclick="openRemoteApp('gn-stream','GN Stream','https://github.com/GN-math-hub/School-Chaets/blob/main/Permanategn-streamed')" title="Star stream">
+    <div class="taskbar-icon" onclick="openRemoteApp ('star-stream','Star Stream','https://raw.githubusercontent.com/GN-math-hub/School-Chaets/refs/heads/main/star-streamonmobile.html')" title="Star stream">
       <svg width="22" height="22" viewBox="0 0 24 24">
         <polygon points="5 3 19 12 5 21 5 3" fill="var(--primary)"/>
       </svg>
