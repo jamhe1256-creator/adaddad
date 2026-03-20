@@ -374,7 +374,7 @@
       transform:translateY(-2px);
     }
 
-    .taskbar-icon.active { background:rgba(200,0,20,0.2); }
+    .taskbar-icon.active { background:rgba(0,0,255,0.2); }
 
     .taskbar-icon.active::after {
       content:'';position:absolute;bottom:2px;
@@ -2218,46 +2218,46 @@ const gnChatHTML = `<!DOCTYPE html>
 *{box-sizing:border-box;margin:0;padding:0}
 body{height:100vh;display:flex;background:#080808;color:#f0e0e0;font-family:'Rajdhani',system-ui,sans-serif;overflow:hidden}
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=Share+Tech+Mono&display=swap');
-.sidebar{width:220px;background:#0a0000;border-right:1px solid rgba(200,0,20,0.2);padding:16px 0;display:flex;flex-direction:column;gap:6px;overflow-y:auto;flex-shrink:0}
+.sidebar{width:220px;background:#0a0000;border-right:1px solid rgba(0,0,255,0.2);padding:16px 0;display:flex;flex-direction:column;gap:6px;overflow-y:auto;flex-shrink:0}
 .sidebar::-webkit-scrollbar{width:4px}
 .sidebar::-webkit-scrollbar-thumb{background:rgba(0,0,255,0.3);border-radius:2px}
-.section-title{color:rgba(200,0,20,0.6);font-size:.65rem;margin:8px 16px 4px;text-transform:uppercase;letter-spacing:2px;font-family:'Share Tech Mono',monospace}
+.section-title{color:rgba(0,0,255,0.6);font-size:.65rem;margin:8px 16px 4px;text-transform:uppercase;letter-spacing:2px;font-family:'Share Tech Mono',monospace}
 .sidebar-item{padding:10px 16px;cursor:pointer;transition:all 0.15s;border-left:2px solid transparent;font-size:.9rem;font-weight:600;letter-spacing:1px;color:rgba(240,180,180,0.7)}
-.sidebar-item:hover{background:rgba(200,0,20,0.08);color:#fff}
-.sidebar-item.active{background:rgba(200,0,20,0.12);border-left-color:#e8001a;color:#ff4444}
+.sidebar-item:hover{background:rgba(0,0,255,0.08);color:#fff}
+.sidebar-item.active{background:rgba(0,0,255,0.12);border-left-color:#0090ff;color:#33aaff}
 .chat-area{flex:1;display:flex;flex-direction:column;min-width:0}
-.chat-header{padding:14px 20px;background:#0a0000;border-bottom:1px solid rgba(200,0,20,0.2);font-size:1rem;color:rgba(240,180,180,0.8);font-weight:700;letter-spacing:3px;text-transform:uppercase;flex-shrink:0}
+.chat-header{padding:14px 20px;background:#0a0000;border-bottom:1px solid rgba(0,0,255,0.2);font-size:1rem;color:rgba(240,180,180,0.8);font-weight:700;letter-spacing:3px;text-transform:uppercase;flex-shrink:0}
 .messages{flex:1;overflow:auto;padding:16px 20px;display:flex;flex-direction:column;gap:10px}
 .messages::-webkit-scrollbar{width:6px}
-.messages::-webkit-scrollbar-thumb{background:rgba(200,0,20,0.25);border-radius:2px}
+.messages::-webkit-scrollbar-thumb{background:rgba(0,0,255,0.25);border-radius:2px}
 .msg{max-width:70%}
 .msg.own{align-self:flex-end}
-.msg-name{font-size:.7rem;color:rgba(200,0,20,0.6);margin-bottom:4px;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.msg-name{font-size:.7rem;color:rgba(0,0,255,0.6);margin-bottom:4px;font-family:'Share Tech Mono',monospace;letter-spacing:1px}
 .msg-name.owner-name{background:linear-gradient(135deg,#FFD700,#FFA500);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700}
 .owner-badge{display:inline-block;background:linear-gradient(135deg,#FFD700,#FFA500);color:#0a1a3a;padding:1px 7px;border-radius:1px;font-size:.6rem;font-weight:700;letter-spacing:1px;-webkit-text-fill-color:initial}
-.msg-bubble{background:rgba(20,5,5,0.9);padding:10px 14px;border-radius:2px;color:#f0e0e0;border:1px solid rgba(200,0,20,0.12);line-height:1.5;font-size:.9rem}
+.msg-bubble{background:rgba(20,5,5,0.9);padding:10px 14px;border-radius:2px;color:#f0e0e0;border:1px solid rgba(0,0,255,0.12);line-height:1.5;font-size:.9rem}
 .msg.own .msg-bubble{background:rgba(120,0,10,0.4);border-color:rgba(0,0,255,0.3);color:#fff}
 .msg.owner-msg .msg-bubble{background:linear-gradient(135deg,rgba(255,215,0,0.15),rgba(255,165,0,0.1));border-color:rgba(255,215,0,0.3)}
-.input-bar{display:flex;gap:10px;padding:12px 20px;background:#0a0000;border-top:1px solid rgba(200,0,20,0.2);flex-shrink:0;position:relative}
-.input-bar input{flex:1;min-width:0;padding:12px 16px;border-radius:2px;background:rgba(20,5,5,0.8);border:1px solid rgba(200,0,20,0.25);color:#f0e0e0;font-size:.9rem;font-family:'Rajdhani',sans-serif;letter-spacing:1px;outline:none;transition:all 0.2s}
-.input-bar input:focus{border-color:#e8001a;background:rgba(25,5,5,0.9);box-shadow:0 0 12px rgba(0,0,255,0.1)}
+.input-bar{display:flex;gap:10px;padding:12px 20px;background:#0a0000;border-top:1px solid rgba(0,0,255,0.2);flex-shrink:0;position:relative}
+.input-bar input{flex:1;min-width:0;padding:12px 16px;border-radius:2px;background:rgba(20,5,5,0.8);border:1px solid rgba(0,0,255,0.25);color:#f0e0e0;font-size:.9rem;font-family:'Rajdhani',sans-serif;letter-spacing:1px;outline:none;transition:all 0.2s}
+.input-bar input:focus{border-color:#0090ff;background:rgba(25,5,5,0.9);box-shadow:0 0 12px rgba(0,0,255,0.1)}
 .input-bar input::placeholder{color:rgba(180,100,100,0.4)}
 .char-counter{position:absolute;bottom:20px;right:140px;font-size:.65rem;color:rgba(180,100,100,0.5);pointer-events:none;font-family:'Share Tech Mono',monospace}
 .char-counter.warning{color:rgba(255,200,0,0.8)}
 .char-counter.error{color:rgba(255,50,50,0.9)}
-.input-bar button{flex-shrink:0;width:90px;padding:12px;border-radius:2px;border:1px solid rgba(200,0,20,0.5);background:transparent;font-weight:700;color:#e8001a;cursor:pointer;transition:all 0.2s;letter-spacing:2px;font-size:.8rem;font-family:'Rajdhani',sans-serif}
-.input-bar button:hover{background:rgba(200,0,20,0.15);color:#fff;border-color:#e8001a}
+.input-bar button{flex-shrink:0;width:90px;padding:12px;border-radius:2px;border:1px solid rgba(0,0,255,0.5);background:transparent;font-weight:700;color:#0090ff;cursor:pointer;transition:all 0.2s;letter-spacing:2px;font-size:.8rem;font-family:'Rajdhani',sans-serif}
+.input-bar button:hover{background:rgba(200,0,20,0.15);color:#fff;border-color:#0090ff}
 .input-bar button:disabled{opacity:0.3;cursor:not-allowed}
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.9);display:flex;align-items:center;justify-content:center;z-index:1000}
-.modal{background:#0a0000;border:1px solid rgba(200,0,20,0.4);border-radius:2px;padding:32px;min-width:320px;box-shadow:0 0 60px rgba(200,0,20,0.2)}
-.modal::before{content:'';display:block;width:100%;height:1px;background:linear-gradient(90deg,transparent,#e8001a,transparent);margin-bottom:24px}
+.modal{background:#0a0000;border:1px solid rgba(0,0,255,0.4);border-radius:2px;padding:32px;min-width:320px;box-shadow:0 0 60px rgba(0,0,255,0.2)}
+.modal::before{content:'';display:block;width:100%;height:1px;background:linear-gradient(90deg,transparent,#0090ff,transparent);margin-bottom:24px}
 .modal h2{color:rgba(240,180,180,0.9);margin-bottom:20px;text-align:center;font-size:1.2rem;letter-spacing:4px;text-transform:uppercase}
 .modal input{width:100%;padding:12px 14px;border-radius:2px;border:1px solid rgba(0,0,255,0.3);background:rgba(20,5,5,0.8);color:#f0e0e0;margin-bottom:16px;font-size:.9rem;font-family:'Rajdhani',sans-serif;letter-spacing:1px;outline:none;transition:all 0.2s}
-.modal input:focus{border-color:#e8001a;box-shadow:0 0 12px rgba(200,0,20,0.15)}
+.modal input:focus{border-color:#0090ff;box-shadow:0 0 12px rgba(200,0,20,0.15)}
 .modal input::placeholder{color:rgba(180,100,100,0.4)}
-.modal button{width:100%;padding:12px;background:transparent;border:1px solid #e8001a;border-radius:2px;color:#e8001a;font-weight:700;cursor:pointer;font-size:.85rem;font-family:'Rajdhani',sans-serif;letter-spacing:3px;transition:all 0.2s}
+.modal button{width:100%;padding:12px;background:transparent;border:1px solid #0090ff;border-radius:2px;color:#0090ff;font-weight:700;cursor:pointer;font-size:.85rem;font-family:'Rajdhani',sans-serif;letter-spacing:3px;transition:all 0.2s}
 .modal button:hover{background:rgba(200,0,20,0.15);color:#fff}
-.toast{position:fixed;top:16px;right:16px;background:#0a0000;border:1px solid #e8001a;color:#ff6666;padding:12px 20px;border-radius:2px;box-shadow:0 0 20px rgba(0,0,255,0.3);animation:toastin 0.3s ease;z-index:2000;font-weight:600;letter-spacing:1px;font-size:.85rem}
+.toast{position:fixed;top:16px;right:16px;background:#0a0000;border:1px solid #0090ff;color:#66ccff;padding:12px 20px;border-radius:2px;box-shadow:0 0 20px rgba(0,0,255,0.3);animation:toastin 0.3s ease;z-index:2000;font-weight:600;letter-spacing:1px;font-size:.85rem}
 @keyframes toastin{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
 </style>
 </head>
@@ -2278,7 +2278,7 @@ body{height:100vh;display:flex;background:#080808;color:#f0e0e0;font-family:'Raj
 </div>
 <div class="chat-area">
   <div class="chat-header" id="roomTitle">PUBLIC</div>
-  <div id="messages" class="messages"><div style="text-align:center;color:rgba(200,0,20,0.4);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:2px;padding:20px;">// CONNECTED TO PUBLIC CHANNEL</div></div>
+  <div id="messages" class="messages"><div style="text-align:center;color:rgba(0,0,255,0.4);font-family:'Share Tech Mono',monospace;font-size:.75rem;letter-spacing:2px;padding:20px;">// CONNECTED TO PUBLIC CHANNEL</div></div>
   <div class="input-bar">
     <input id="msgInput" placeholder="Type a message..." autocomplete="off" maxlength="600"/>
     <span id="charCounter" class="char-counter">0/300</span>
@@ -2294,7 +2294,7 @@ const banFirebaseConfig={apiKey:"AIzaSyCTUq6Hye-l6Lh2ylHQ4yOM-HUWODGgMtY",authDo
 const banApp=firebase.initializeApp(banFirebaseConfig);
 const banDB=firebase.database(banApp);
 function generateNumericID(){const t=Date.now().toString().slice(-6);const r=Math.floor(Math.random()*10000).toString().padStart(4,'0');return r+t;}
-(function(){const originalSetItem=Storage.prototype.setItem;let isLocked=false;let myID=null;function lockScreen(){if(isLocked)return;isLocked=true;document.body.innerHTML="";document.body.style.cssText="background:#000;color:#e8001a;display:flex;justify-content:center;align-items:center;font-size:60px;font-weight:900;letter-spacing:10px;";document.body.innerText="BANNED";}
+(function(){const originalSetItem=Storage.prototype.setItem;let isLocked=false;let myID=null;function lockScreen(){if(isLocked)return;isLocked=true;document.body.innerHTML="";document.body.style.cssText="background:#000;color:#0090ff;display:flex;justify-content:center;align-items:center;font-size:60px;font-weight:900;letter-spacing:10px;";document.body.innerText="BANNED";}
 document.addEventListener("DOMContentLoaded",()=>{myID=localStorage.getItem(ID_KEY);if(!myID){myID=generateNumericID();originalSetItem.call(localStorage,ID_KEY,myID);}window.currentUserID=myID;window.banDatabase=banDB;window.isOwnerCompat=OWNER_IDS_COMPAT.includes(myID);const bannedRef=banDB.ref("bannedIDs");bannedRef.on("value",(snapshot)=>{const bannedIDs=snapshot.val()||[];if(bannedIDs.includes(myID)){lockScreen();}});});})();
 <\/script>
 <script type="module">
@@ -2318,7 +2318,7 @@ const joinRoomBtn=document.getElementById('joinRoomBtn');
 const joinedRoomsEl=document.getElementById('joinedRooms');
 let myID=window.currentUserID||localStorage.getItem('numericUserID');
 let username="Anonymous";let currentRoom="public";let currentListener=null;let violationCount=0;
-const MAX_VIOLATIONS=3;const MAX_CHARS=300;let lastMessageTime=0;const MESSAGE_COOLDOWN=5000;
+const MAX_VIOLATIONS=3;const MAX_CHARS=300;let lastMessageTime=0;const MESSAGE_COOLDOWN=1000;
 const profanityPatterns=[/n+[i1!|]+[gq9]+[e3a@]+r+/gi,/n+[i1!|]+[gq9]+[ae@3]+/gi,/\bf+[\s\.\-_]*u+[\s\.\-_]*c+[\s\.\-_]*k+\b/gi,/\bs+[\s\.\-_]*h+[\s\.\-_]*[i1!]+[\s\.\-_]*t+\b/gi,/\bb+[\s\.\-_]*[i1!]+[\s\.\-_]*t+[\s\.\-_]*c+[\s\.\-_]*h+\b/gi,/\bf+[\s\.\-_]*[a@4]+[\s\.\-_]*[gq9]+[o0]*[t+]*\b/gi];
 function containsProfanity(text){for(let p of profanityPatterns){if(p.test(text))return true;}const n=text.toLowerCase().replace(/[0]/g,'o').replace(/[1]/g,'i').replace(/[3]/g,'e').replace(/[4]/g,'a').replace(/[5]/g,'s').replace(/[@]/g,'a').replace(/[!|]/g,'i');const words=['*****','*****','*****','*****','*****','*****','*****'];for(let w of words){if(n.includes(w))return true;}return false;}
 function showToast(msg){const t=document.createElement('div');t.className='toast';t.textContent=msg;document.body.appendChild(t);setTimeout(()=>{t.style.opacity='0';t.style.transition='opacity 0.3s';setTimeout(()=>t.remove(),300);},3000);}
